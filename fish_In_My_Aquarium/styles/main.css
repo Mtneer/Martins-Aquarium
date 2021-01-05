@@ -1,0 +1,81 @@
+* {
+    border: 1px dotted lightblue;
+    font-family: Helvetica, Arial, sans-serif
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    padding: 0em;
+    margin: 0.5em;
+    background-color: cadetblue;
+    font-size: x-large;
+}
+
+.logo {
+    width: 10vw;
+    padding: 2em;
+}
+
+h1 {
+    width: 70vw;
+    text-align: center;
+    justify-self: flex-end;
+}
+
+/* Fish Cards and Tips */
+.mainContent {
+    display: flex;
+    justify-content: center;
+}
+
+aside {
+    width: 30vw;
+    margin: 1em;
+}
+
+/* Fish in Martin's Aquarium */
+h2 {
+    text-align: center;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    width: 55vw;
+    margin: 1em;
+}
+
+.card {
+    display: flex;
+    height: 30vh;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.fish {
+    height: 30vh;
+}
+
+/* Quotes and Travel Tips */
+blockquote {
+    font-style: italic;
+    text-align: center;
+}
+
+/* Places I've Been */
+.places {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.location {
+    width: 60vw;
+}
+
+footer {
+    text-align: center;
+}
