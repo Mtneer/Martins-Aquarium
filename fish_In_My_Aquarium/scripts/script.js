@@ -1,44 +1,65 @@
 let fishCards = [
     {
-        imgFile = "https://static.wikia.nocookie.net/pixar/images/1/1f/Dory-white.jpg",
-        name = "Dory",
-        size = 3, // in inches
-        locHarvest = "P Sherman 42 Wallaby Way Sydney",
-        food = "Pretzels"
+        imgFile: "https://static.wikia.nocookie.net/pixar/images/1/1f/Dory-white.jpg",
+        name: "Dory",
+        size: "3 inches",
+        locHarvest: "P Sherman 42 Wallaby Way Sydney",
+        food: "Pretzels"
     },
     {
-        imgFile = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixar.fandom.com%2Fwiki%2FHank&psig=AOvVaw2H3hYJ0MGNjaxQUHatT6GY&ust=1609960158882000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOjEs42_he4CFQAAAAAdAAAAABAD",
-        name = "Hank",
-        size = 1, // in inches
-        locHarvest = "Monterey Bay Acquarium",
-        food = "Twinkies"
+        imgFile: "https://static.wikia.nocookie.net/pixar/images/d/de/Hank_FD.jpg/revision/latest?cb=20160330202717",
+        name: "Hank",
+        size: "3 feet",
+        locHarvest: "Monterey Bay Acquarium",
+        food: "Twinkies"
     },
     {
-        imgFile = "https://www.google.com/url?sa=i&url=https%3A%2F%2Ffindingdory.fandom.com%2Fwiki%2FDestiny&psig=AOvVaw2mR-vRs5LIjzXMQ9JINZLl&ust=1609960378194000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPDF1fW_he4CFQAAAAAdAAAAABAD",
-        name = "Destiny",
-        size = 1, // in inches
-        locHarvest = "Monterey Bay Acquarium",
-        food = "Krill"
+        imgFile: "https://vignette.wikia.nocookie.net/findingdory/images/6/6c/Destiny_render.png/revision/latest?cb=20160520041520",
+        name: "Destiny",
+        size: "20 feet",
+        locHarvest: "Monterey Bay Acquarium",
+        food: "Krill"
     },
     {
-        imgFile = "",
-        name = "Bruce",
-        size = 1, // in inches
-        locHarvest = "The open ocean",
-        food = "Fish"
+        imgFile: "https://static.wikia.nocookie.net/pixar/images/8/83/71423763-2085-4F98-8461-FC6E2C48828E.png/revision/latest?cb=20181210152244",
+        name: "Bruce",
+        size: "15 feet",
+        locHarvest: "The open ocean",
+        food: "Fish"
     },
     {
-        imgFile = "",
-        name = "Nigel",
-        size = 1, // in inches
-        locHarvest = "Sydney, Australia",
-        food = "Crabs"
+        imgFile: "https://static.wikia.nocookie.net/disneyssebastiandory/images/7/7f/Nigel.png",
+        name: "Nigel",
+        size: "3 feet",
+        locHarvest: "Sydney, Australia",
+        food: "Crabs"
     },
     {
-        imgFile = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixar.fandom.com%2Fwiki%2FBubbles&psig=AOvVaw1Yum6IhLENQl2s5OiZZkZA&ust=1609960193941000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCID9uKC_he4CFQAAAAAdAAAAABAD",
-        name = "Bubbles",
-        size = 1, // in inches
-        locHarvest = "42 Wallaby Way Sydney",
-        food = "Bubbles"
+        imgFile: "https://static.wikia.nocookie.net/pixar/images/0/0c/Bubbles.png",
+        name: "Bubbles",
+        size: "3 inches",
+        locHarvest: "42 Wallaby Way Sydney",
+        food: "Bubbles"
     }
 ]
+
+// Select the div where we want to print details about the fish
+let fishDetails = document.querySelector(".fishCards")
+
+// This function will accept a person object and spit out an HTML representation of that person object
+function printFishDetail(personObject){
+    return `<section class="card">
+        <img class="fish" src=${personObject.imgFile} alt="${personObject.name} picture"/>
+        <div class="fishDetail">
+            <h4>${personObject.name}</h4>
+            <p>${personObject.size}</p>
+            <p>${personObject.locHarvest}</p>
+            <p>${personObject.food}</p>
+        </div>
+    </section>`
+}
+
+// loop through all the party guests
+for(let i = 0; i < fishCards.length; i++){
+    fishDetails.innerHTML += printFishDetail(fishCards[i])
+}

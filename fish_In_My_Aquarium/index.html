@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" href="scripts/script.js">
 </head>
 <body>
     <!--Page Header-->
@@ -18,74 +19,24 @@
         <!-- Fish List and Martin's Tips -->
         <div class="mainContent">
             <!--Fish List-->
-            <article class="cardContainer">
+            <article>
                 <h2>My Fish</h2>
                 <!--Fish Card-->
-                <section class="card">
-                    <img class="fish" src="https://static.wikia.nocookie.net/pixar/images/1/1f/Dory-white.jpg" alt="Fish">
-                    <div class="fishDetail">
-                        <p class="cardDetail">Beta Fish</p>
-                        <p>2 inches</p>
-                        <p>George</p>
-                        <p>Galapagos Island</p>
-                        <p>Pretzels</p>
+                <div class="cardContainer">
+                    <div class="fishCards">
+                        <!-- <section class="card">
+                            <img class="fish" src=${personObject.imgFile} alt="${personObject.name} picture">
+                            <div class="fishDetail">
+                                <h4>${personObject.name}</h4>
+                                <p>${personObject.size} inches</p>
+                                <p>${personObject.locHarvest}</p>
+                                <p>${personObject.food}</p>
+                            </div>
+                        </section> -->
                     </div>
-                </section>
-    ​
-                <section class="card">
-                    <img class="fish" src="https://static.wikia.nocookie.net/pixar/images/1/1f/Dory-white.jpg" alt="Fish">
-                    <div class="fishDetail">
-                        <p>Beta Fish</p>
-                        <p>2 inches</p>
-                        <p>George</p>
-                        <p>Galapagos Island</p>
-                        <p>Pretzels</p>
-                    </div>
-                </section>
-    ​
-                <section class="card">
-                    <img class="fish" src="https://static.wikia.nocookie.net/pixar/images/1/1f/Dory-white.jpg" alt="Fish">
-                    <div class="fishDetail">
-                        <p>Beta Fish</p>
-                        <p>2 inches</p>
-                        <p>George</p>
-                        <p>Galapagos Island</p>
-                        <p>Pretzels</p>
-                    </div>
-                </section>
-    ​
-                <section class="card">
-                    <img class="fish" src="https://static.wikia.nocookie.net/pixar/images/1/1f/Dory-white.jpg" alt="Fish">
-                    <div class="fishDetail">
-                        <p>Beta Fish</p>
-                        <p>2 inches</p>
-                        <p>George</p>
-                        <p>Galapagos Island</p>
-                        <p>Pretzels</p>
-                    </div>    
-                </section>
-    ​
-                <section class="card">
-                    <img class="fish" src="https://static.wikia.nocookie.net/pixar/images/1/1f/Dory-white.jpg" alt="Fish">
-                    <div class="fishDetail">
-                        <p>Beta Fish</p>
-                        <p>2 inches</p>
-                        <p>George</p>
-                        <p>Galapagos Island</p>
-                        <p>Pretzels</p>
-                    </div>
-                </section>
-    ​
-                <section class="card">
-                    <img class="fish" src="https://static.wikia.nocookie.net/pixar/images/1/1f/Dory-white.jpg" alt="Fish">
-                    <div class="fishDetail">
-                        <p>Beta Fish</p>
-                        <p>2 inches</p>
-                        <p>George</p>
-                        <p>Galapagos Island</p>
-                        <p>Pretzels</p>
-                    </div>
-                </section>
+
+        ​           <script src="scripts/script.js"></script>
+                </div>
             </article>
 
             <!--Side Bar with fish tips-->
@@ -104,7 +55,7 @@
                 <h3>Tank Cleaning</h3>
                 <ul>
                     <li>Don't even worry about it</li>
-                    <li>Nemo will break your filter</li>
+                    <li>Nemo will break your tank filter anyway</li>
                 </ul>
             </aside>
 ​        </div>
@@ -116,29 +67,31 @@
         </article>
 ​
         <!--Locations List Component-->
-        <article class="places">
+        <article>
             <!--Location Card-->
             <h2>Places I've Been</h2>
-            <section>
-                <img class="location" src="https://www.telegraph.co.uk/content/dam/Travel/2017/june/madagascar-miavana.jpg" alt="Place Picture">
-                <p>Madagascar</p>
-            </section>
-            <section>
-                <img class="location" src="https://www.telegraph.co.uk/content/dam/Travel/2017/june/madagascar-miavana.jpg" alt="Place Picture">
-                <p>Madagascar</p>
-            </section>
-            <section>
-                <img class="location" src="https://www.telegraph.co.uk/content/dam/Travel/2017/june/madagascar-miavana.jpg" alt="Place Picture">
-                <p>Madagascar</p>
-            </section>
-            <section>
-                <img class="location" src="https://www.telegraph.co.uk/content/dam/Travel/2017/june/madagascar-miavana.jpg" alt="Place Picture">
-                <p>Madagascar</p>
-            </section>
-            <section>
-                <img class="location" src="https://www.telegraph.co.uk/content/dam/Travel/2017/june/madagascar-miavana.jpg" alt="Place Picture">
-                <p>Madagascar</p>
-            </section>
+            <div class="places">
+                <section>
+                    <img class="location" src="https://www.telegraph.co.uk/content/dam/Travel/2017/june/madagascar-miavana.jpg" alt="Place Picture">
+                    <p class="location_caption">Madagascar</p>
+                </section>
+                <section>
+                    <img class="location" src="https://www.telegraph.co.uk/content/dam/Travel/2017/june/madagascar-miavana.jpg" alt="Place Picture">
+                    <p class="location_caption">Madagascar</p>
+                </section>
+                <section>
+                    <img class="location" src="https://www.telegraph.co.uk/content/dam/Travel/2017/june/madagascar-miavana.jpg" alt="Place Picture">
+                    <p class="location_caption">Madagascar</p>
+                </section>
+                <section>
+                    <img class="location" src="https://www.telegraph.co.uk/content/dam/Travel/2017/june/madagascar-miavana.jpg" alt="Place Picture">
+                    <p class="location_caption">Madagascar</p>
+                </section>
+                <section>
+                    <img class="location" src="https://www.telegraph.co.uk/content/dam/Travel/2017/june/madagascar-miavana.jpg" alt="Place Picture">
+                    <p class="location_caption">Madagascar</p>
+                </section>
+            </div>
         </article>
 ​
     </main>
@@ -148,6 +101,5 @@
         <p>I am a millionaire</p>
         <p>Contact Info Goes Here</p>
     </footer>
-​
 </body>
 </html>
