@@ -7,21 +7,21 @@ let fishCards = [
         food: "Pretzels"
     },
     {
-        imgFile: "https://static.wikia.nocookie.net/pixar/images/d/de/Hank_FD.jpg/revision/latest?cb=20160330202717",
+        imgFile: "https://static.wikia.nocookie.net/pixar/images/d/de/Hank_FD.jpg",
         name: "Hank",
         size: "3 feet",
         locHarvest: "Monterey Bay Acquarium",
         food: "Twinkies"
     },
     {
-        imgFile: "https://vignette.wikia.nocookie.net/findingdory/images/6/6c/Destiny_render.png/revision/latest?cb=20160520041520",
+        imgFile: "https://vignette.wikia.nocookie.net/findingdory/images/6/6c/Destiny_render.png",
         name: "Destiny",
         size: "20 feet",
         locHarvest: "Monterey Bay Acquarium",
         food: "Krill"
     },
     {
-        imgFile: "https://static.wikia.nocookie.net/pixar/images/8/83/71423763-2085-4F98-8461-FC6E2C48828E.png/revision/latest?cb=20181210152244",
+        imgFile: "https://static.wikia.nocookie.net/pixar/images/8/83/71423763-2085-4F98-8461-FC6E2C48828E.png",
         name: "Bruce",
         size: "15 feet",
         locHarvest: "The open ocean",
@@ -63,3 +63,4 @@ function printFishDetail(personObject){
 for(let i = 0; i < fishCards.length; i++){
     fishDetails.innerHTML += printFishDetail(fishCards[i])
 }
+
