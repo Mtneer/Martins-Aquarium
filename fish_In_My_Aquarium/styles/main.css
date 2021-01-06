@@ -3,14 +3,22 @@
     font-family: Helvetica, Arial, sans-serif
 }
 
+article {
+    background-color: lightslategray;
+    padding: 1em;
+    margin: 1em;
+    color: whitesmoke
+}
+
 /* Header Styling */
 header {
     display: flex;
     align-items: center;
     padding: 0em;
-    margin: 0.5em;
+    margin: 1em;
     background-color: cadetblue;
-    font-size: x-large;
+    font-size: xx-large;
+    color: whitesmoke;
 }
 
 .logo {
@@ -32,10 +40,18 @@ h1 {
 
 aside {
     width: 30vw;
+    border: 2px solid cadetblue;
+    padding: 1em;
+    margin: 1em;
 }
 
 /* Fish in Martin's Aquarium */
-h2 {
+main h2 {
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+aside h2 {
     text-align: center;
     border-bottom: 2px solid grey;
 }
@@ -94,4 +110,12 @@ blockquote {
 
 footer {
     text-align: center;
+    background-color: cadetblue;
+    margin: 1em;
+    padding: 1em;
+}
+
+footer p {
+    margin: 0;
+    font-weight: bold;
 }
