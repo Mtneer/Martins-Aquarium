@@ -1,35 +1,121 @@
-.interest {
-    flex-basis: 16%;  /* Make each child element the same width */
-    border: 1px dotted crimson;
+* {
+    /* border: 1px dotted lightblue; */
+    font-family: Helvetica, Arial, sans-serif
+}
+
+article {
+    background-color: lightslategray;
     padding: 1em;
-    margin: 0.5em;
-    text-align: center; /* Center align the text in the boxes */
-    height: 2.5em;
+    margin: 1em;
+    color: whitesmoke
 }
 
-.bio__interests {
-    display: flex;  /* Display the child items in a Flex layout */
-    flex-wrap: wrap;  /* Let the rows wrap if there are too many */
-    justify-content: space-evenly; /* Evenly space the child elements */
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    padding: 0em;
+    margin: 1em;
+    background-color: cadetblue;
+    font-size: xx-large;
+    color: whitesmoke;
 }
 
-.pageHeader {
-    font-weight: bold;
-    font-size: large;
+.logo {
+    width: 10vw;
+    padding: 2em;
 }
 
-.shop {
-    flex-basis: 15%;
-    border: 1px dashed forestgreen;
-    padding: 1em;
-    margin: 0.5em;
+h1 {
+    width: 70vw;
     text-align: center;
-    height: 2.5em;
+    justify-self: flex-end;
+}
+
+/* Fish Cards and Tips */
+.mainContent {
+    display: flex;
+    justify-content: space-around;
+}
+
+aside {
+    width: 30vw;
+    border: 2px solid cadetblue;
+    padding: 1em;
+    margin: 1em;
+}
+
+/* Fish in Martin's Aquarium */
+main h2 {
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+aside h2 {
+    text-align: center;
+    border-bottom: 2px solid grey;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 55vw;
+    margin: 2em;
+}
+
+.card {
+    display: flex;
+    height: 30vh;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.fish {
+    height: auto;
+    width: 20vw;
+    padding: 1em;
+}
+
+.fishDetail {
+    padding: 1em;
+    width: 25vw;
+}
+
+/* Quotes and Travel Tips */
+blockquote {
+    font-style: italic;
+    text-align: center;
+}
+
+/* Places I've Been */
+.places {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
 }
 
-.list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.location {
+    width: 25vw;
+    padding: 1em;
+}
+
+.location_caption {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background-color: cadetblue;
+    margin: 1em;
+    padding: 1em;
+}
+
+footer p {
+    margin: 0;
+    font-weight: bold;
 }

@@ -3,72 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sally's Interests</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
+    <!--Page Header-->
+    <header>
+        <img class="logo" src="https://st2.depositphotos.com/4398873/6568/v/600/depositphotos_65685441-stock-illustration-fish-logo-template.jpg" alt="Martin's Logo"/>
+        <h1>Martin's Aquarium</h1>
+    </header>
+​
+    <!--Main Content Container-->
     <main>
-        <!-- Parent biography component -->
-        <article class="bio">
-    
-            <!-- Child biography component -->
-            <section class="bio__name">
-                <h1>Sally Forthwright</h1>
-            </section>
-    
-            <!-- Child biography component -->
-            <section class="bio__address">
-                100 Infinity Way, Nashville
-            </section>
-    
-            <!-- Child biography component -->
-            <section class="bio__interests">
-                <div class="interest">
-                    Oyster harvesting
+        <!-- Fish List and Martin's Tips -->
+        <div class="mainContent">
+            <!--Fish List-->
+            <article>
+                <h2>My Fish</h2>
+                <!--Fish Card-->
+                <div class="cardContainer">
+                    <div class="fishCards">
+                        <!-- <section class="card">
+                            <img class="fish" src=${personObject.imgFile} alt="${personObject.name} picture">
+                            <div class="fishDetail">
+                                <h4>${personObject.name}</h4>
+                                <p>${personObject.size} inches</p>
+                                <p>${personObject.locHarvest}</p>
+                                <p>${personObject.food}</p>
+                            </div>
+                        </section> -->
+                    </div>
+
                 </div>
-                <div class="interest">
-                    Juggling
-                </div>
-                <div class="interest">
-                    Triathalons
-                </div>
-                <div class="interest">
-                    Killing ants
-                </div>
-                <div class="interest">
-                    Melting stuff
-                </div>
-                <div class="interest">
-                    Coloring
-                </div>
-                <div class="interest">
-                    Sleeping
-                </div>
-                <div class="interest">
-                    Singing
-                </div>
-            </section>
-    
+            </article>
+
+            <!--Side Bar with fish tips-->
+            <aside class="tips-container">
+                
+            </aside>
+​        </div>
+        <!--Quotes Component-->
+        <article>
+            <h2>Quotes and Travel Tips</h2>
+            <blockquote>Don't forget your passport!</blockquote>
+            <blockquote>If you run out of money just rob someone</blockquote>
         </article>
+​
+        <!--Locations List Component-->
+        <article class="locations-container">
+            <!--Location Card-->            
+        </article>
+​
     </main>
-
-    <header class="pageHeader">Coffee Houses of Nashville</header>
-
-    <section class="list">
-        <article class="shop">The Jam</article>
-        <article class="shop">The Well</article>
-        <article class="shop">Red Bicycle</article>
-        <article class="shop">Crema</article>
-        <article class="shop">Frothy Monkey</article>
-        <article class="shop">8th &amp; Roast</article>
-        <article class="shop">Bongo Java</article>
-        <article class="shop">Flatrock</article>
-        <article class="shop">Fido</article>
-        <article class="shop">Steadfast Coffee</article>
-        <article class="shop">Dose Coffee</article>
-        <article class="shop">Sam &amp; Zoes</article>
-        <article class="shop">Slow Hand Coffee</article>
-        <article class="shop">The Horn</article>
-    </section>
+​
+    <footer>
+        <p>Website By Martin</p>
+        <p>I am a millionaire</p>
+        <p>Contact Info Goes Here</p>
+    </footer>
+    <script type="module" src="scripts/main.js"></script>
 </body>
 </html>
