@@ -43,24 +43,6 @@ let fishCards = [
     }
 ]
 
-// Select the div where we want to print details about the fish
-let fishDetails = document.querySelector(".fishCards")
-
-// This function will accept a person object and spit out an HTML representation of that person object
-function printFishDetail(personObject){
-    return `<section class="card">
-        <img class="fish" src=${personObject.imgFile} alt="${personObject.name} picture"/>
-        <div class="fishDetail">
-            <h4>${personObject.name}</h4>
-            <p>${personObject.size}</p>
-            <p>${personObject.locHarvest}</p>
-            <p>${personObject.food}</p>
-        </div>
-    </section>`
+export const fishList = () => {
+    return fishCards.slice()
 }
-
-// loop through all the party guests
-for(let i = 0; i < fishCards.length; i++){
-    fishDetails.innerHTML += printFishDetail(fishCards[i])
-}
-
